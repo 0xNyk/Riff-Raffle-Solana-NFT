@@ -57,7 +57,7 @@ The Riff Raffle program can be deployed as a standalone instance. This means dep
 1. **Update program address in the codebase**
 
    - Make sure both `wallet` & `draffle program id` are matching your use case in `Anchor.toml`. Use the path to `deploy-keypair.json` for the `wallet`, and use `program-keypair.json` address for the `program id`.
-   - Make sure to update the contract's `declare_id!("<address>")` to the `program-keypair.json` address. I also recommend searching for `raFv43GLKy2ySi5oVExZxFGwdbKRRaDQBqikiY9YbVF` in VSCode and doing replace-all with the new value.
+   - Make sure to update the contract's `declare_id!("<address>")` to the `program-keypair.json` address. I also recommend searching for `rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R` in VSCode and doing replace-all with the new value.
 
 1. **Build & Deploy**
    ```
@@ -254,7 +254,7 @@ Spin up a local validator like so. This will deploy your program (make sure to c
 
 ```bash
 solana-test-validator \
---bpf-program raFv43GLKy2ySi5oVExZxFGwdbKRRaDQBqikiY9YbVF target/deploy/draffle.so \
+--bpf-program rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R target/deploy/draffle.so \
 --bpf-program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s scripts/metaplex_token_metadata.so \
 --clone H6ARHf6YXhGYeQfUzQNGk6rDNnLBQKrenN712K4AQJEG \
 --clone GVXRSBjFk6e6J3NbVPXohDJetcTjaeeuykUpbQF8UoMU \

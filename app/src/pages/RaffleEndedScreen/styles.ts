@@ -97,6 +97,7 @@ export const useStyles = makeStyles<Theme, { device: DeviceType }>(
     }),
     actionSectionContainer: {
       width: '100%',
+      backgroundColor: alpha(theme.palette.common.black, 0.85),
     },
     totalTickets: {
       marginRight: '80px',

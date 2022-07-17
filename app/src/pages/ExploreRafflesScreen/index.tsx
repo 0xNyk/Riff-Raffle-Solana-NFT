@@ -54,14 +54,14 @@ const ExploreRafflesScreen: FC = () => {
     return (
       <>
         <Typography variant="h1" className={classes.titleBar}>
-          More raffles will be coming soon!
+          WTF is Coming Soon??
         </Typography>
       </>
     );
 
   return (
     <>
-      <img src={floateesLogo} alt={'disord-logo'} />
+      <img src={''} alt={''} />
       <FilterBar
         hideEndedRaffles={hideEndedRaffles}
         setHideEndedRaffles={setHideEndedRaffles}
@@ -86,7 +86,7 @@ const ExploreRafflesScreen: FC = () => {
         </Grid>
       ) : (
         <Typography variant="h4" className={classes.mainContent}>
-          No raffles to display.
+          WTF is going on?? More Raffles Coming Soon.
         </Typography>
       )}
     </>

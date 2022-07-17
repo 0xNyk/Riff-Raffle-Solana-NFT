@@ -2,16 +2,16 @@ anchor_version = "0.23.0"
 
 [provider]
 cluster = "localnet"
-wallet = "operations/DEp4gJeVpAgXj25A1QTRR2ta35cgNKGqEyrQ7WjVv7eR.json"
+wallet = "operations/deploy-keypair.json"
 
 [programs.localnet]
-draffle = "raFv43GLKy2ySi5oVExZxFGwdbKRRaDQBqikiY9YbVF"
+draffle = "rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R"
 
 [programs.devnet]
-draffle = "raFv43GLKy2ySi5oVExZxFGwdbKRRaDQBqikiY9YbVF"
+draffle = "rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R"
 
 [programs.mainnet]
-draffle = "raFv43GLKy2ySi5oVExZxFGwdbKRRaDQBqikiY9YbVF"
+draffle = "rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R"
 
 [scripts]
 test = "mocha -t 1000000 programs/tests"

@@ -66,7 +66,7 @@ export const useStyles = makeStyles<Theme, { device: DeviceType }>(
       marginTop: '10px',
       fontSize: device === DeviceType.Phone ? '32px' : '60px',
       color: 'white',
-      WebkitTextStrokeWidth: '1px',
+      WebkitTextStrokeWidth: '3px',
       WebkitTextStrokeColor: theme.palette.secondary.main,
       textShadow: `0 0 10px ${theme.palette.secondary.main}`,
     }),
@@ -101,7 +101,7 @@ export const useStyles = makeStyles<Theme, { device: DeviceType }>(
     },
     seeAllPrizesLabel: {},
     detailsSection: ({ device }) => ({
-      paddingTop: '20px',
+      paddingTop: '140px',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-evenly',
@@ -111,12 +111,14 @@ export const useStyles = makeStyles<Theme, { device: DeviceType }>(
       maxHeight: '500px',
     }),
     actionSectionContainer: {
-      padding: '20px 0 20px 0',
+     
+      backgroundColor: alpha(theme.palette.common.black, 0.96),
     },
     actionSectionInner: {
       padding: '10px 0',
       width: '90%',
       textAlign: 'center',
+      backgroundColor: alpha(theme.palette.common.black, 0.85),
     },
     connectToBuyButton: {
       width: '80%',

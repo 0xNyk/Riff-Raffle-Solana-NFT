@@ -21,7 +21,7 @@ use std::mem::size_of;
 use std::str::FromStr;
 use std::rc::Rc;
 
-const FEE_WALLET: &str = "CumSkyxk3mrC6voinTHf3RVj46Az5C65kHpCRwUxmHJ5";
+const FEE_WALLET: &str = "pErLXusjgZkDJT9126Mb8hp8NZxmJoGniA6WEMPpNhb";
 
 #[derive(Default, Debug, Parser)]
 pub struct ConfigOverride {
@@ -34,7 +34,7 @@ pub struct ConfigOverride {
     #[clap(
         global = true,
         long = "program-id",
-        default_value = "raFv43GLKy2ySi5oVExZxFGwdbKRRaDQBqikiY9YbVF"
+        default_value = "rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R"
     )]
     pub program_id: String,
 }
@@ -90,8 +90,8 @@ pub fn entry(opts: Opts) -> Result<()> {
     };
 
     // Client setup
-    let payer = read_keypair_file(wallet.clone()).expect("Example requires a keypair file"); // FIXME upgrade
-    let payer2 = read_keypair_file(wallet).expect("Example requires a keypair file");
+    let payer = read_keypair_file(wallet.clone()).expect("operations/operator-keypair.json"); // FIXME upgrade
+    let payer2 = read_keypair_file(wallet).expect("operations/operator-keypair.json");
     let url = match opts.cfg_override.cluster {
         Some(cluster) => cluster,
         None => Cluster::Custom(
@@ -100,10 +100,10 @@ pub fn entry(opts: Opts) -> Result<()> {
         ),
     };
     let client = Client::new_with_options(url, Rc::new(payer), CommitmentConfig::processed()); // client: Client::new and Client::new_with_options now accept Rc<dyn Signer> instead of Keypair (#975).
-    let program_id: Pubkey = FromStr::from_str(&opts.cfg_override.program_id)?;
-    // let program_id: Pubkey = FromStr::from_str("raFv43GLKy2ySi5oVExZxFGwdbKRRaDQBqikiY9YbVF")?;
+    let program_id: Pubkey = FromStr::from_str("rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R")?;
+    // let program_id: Pubkey = FromStr::from_str("rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R")?;
     let program_client = client.program(program_id);
-    println!("Program ID: {}", program_id);
+    println!("{} {}", ("Program ID: {rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R}"), program_id);
 
     match opts.command {
         Command::ShowRaffle { raffle } => show_raffle(&program_client, raffle),

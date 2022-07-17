@@ -7,7 +7,7 @@ const SECONDARY_COLOR = '#ff7b9c';
 const theme = ({ device }: { device: DeviceType }) =>
   createTheme({
     typography: {
-      allVariants: { color: '#FFF', fontFamily: 'Roboto Mono' },
+      allVariants: { color: '#FFF', fontFamily: 'Oswald, sans-serif' },
       h1: {
         color: PRIMARY_COLOR,
         textAlign: 'center',

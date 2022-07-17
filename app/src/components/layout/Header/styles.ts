@@ -21,7 +21,7 @@ export const useStyles = makeStyles<Theme, { device: DeviceType }>(
       display: 'flex',
       flexDirection: 'row',
       justifyContent: 'space-between',
-      backgroundColor: 'rgba(254,185,1,1)',
+      backgroundColor: '#9400ff',
       alignItems: 'center',
       boxShadow: '0 0 10px 0 #000',
       zIndex: 99,

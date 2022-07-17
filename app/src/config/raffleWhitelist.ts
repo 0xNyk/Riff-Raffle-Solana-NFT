@@ -22,20 +22,41 @@ const testWhitelist = new Map<string, RaffleMetaData>([
 ]);
 
 const prodWhitelist = new Map<string, RaffleMetaData>([
-  [
-    'HpCtUDuAMzsjiZD9bBDbLDrfniw7qAP4CbxwUzobsBFq',
-    {
-      name: 'TEST raffle',
-      // overviewImageUri: '/resources/quack.png',
-    },
-  ],
-  [
-    'EXJPFGP7FSUVdG1zEnbcCdnjpm7QBBsS6uBSRL3wv362',
-    {
-      name: 'SOL Raffle',
-      // overviewImageUri: '/resources/stoned.png',
-    },
-  ],
+// [
+ //   'sPcMGrTuiBz3dQ5kJu9MBj65E6qBqXpZ83VYxzMpFoj',
+ //   {
+ //     name: 'HIGH ROLLER #726 PNP RAFFLE',
+ //     overviewImageUri: '/resources/PRIZE1.png',
+ //   },
+ // ],
+//  [
+    //'GeUFserhuyTrLQdANwHWrcREX866pBSUskHPXFxnUFt7',
+   // {
+    //  name: 'HIGH ROLLER #1080 SOL RAFFLE',
+   //   overviewImageUri: '/resources/PRIZE2.png',
+   // },
+//  ],
+ // [
+   // '7j1HKPQKfzwqw2toHB9Px3Tw75GVsPpfNDTRhQh8zfg7',
+   // {
+    //  name: 'HIGH ROLLER #1118 PNP RAFFLE',
+   //   overviewImageUri: '/resources/PRIZE3.png',
+  //  },
+  //],
+ // [
+   // '',
+   // {
+    //  name: 'HIGH JUICE RAFFLE',
+   //   overviewImageUri: '/resources/JUICELOGO.png',
+   // },
+  //],
+  //[
+    //'',
+    //{
+    //  name: 'LEDGER RAFFLE',
+    //  overviewImageUri: '/resources/LEDGER NANO.jpg',
+    //},
+  //],
 ]);
 
 export const RAFFLES_WHITELIST = TESTING ? testWhitelist : prodWhitelist;

@@ -22,7 +22,7 @@ export interface HeaderProps {
 
 const NAV_LINKS_LIST = [
   { label: 'Raffle', target: routes.RAFFLES },
-  { label: 'Auction', target: routes.AUCTIONS },
+
   { label: 'Admin Panel', target: routes.ADMIN.HOME, admin: true },
 ];
 
@@ -75,8 +75,8 @@ const Header: FC<HeaderProps> = ({ onBackNavigation }) => {
                 className={classes.homeButton}
               >
                 <img
-                  src="/logo_navbar.png"
-                  alt={'Site banner'}
+                  src='url(rafflebg.png)'
+                  alt={''}
                   className={classes.homeButtonIcon}
                 />
               </IconButton>

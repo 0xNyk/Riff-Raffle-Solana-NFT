@@ -170,7 +170,7 @@ RUST_BACKTRACE=full ${SCRIPT_PATH}/metaplex-token-metadata-test-client create_me
 ### TEST VALIDATOR
 ## need to add the custom programs to the test validator this way - clone from mainnet-beta
 solana-test-validator \
---bpf-program raFv43GLKy2ySi5oVExZxFGwdbKRRaDQBqikiY9YbVF target/deploy/draffle.so \
+--bpf-program rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R target/deploy/draffle.so \
 --bpf-program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s scripts/metaplex_token_metadata.so \
 --clone H6ARHf6YXhGYeQfUzQNGk6rDNnLBQKrenN712K4AQJEG \
 --clone GVXRSBjFk6e6J3NbVPXohDJetcTjaeeuykUpbQF8UoMU \
@@ -178,7 +178,7 @@ solana-test-validator \
 --url mainnet-beta
 
 solana-test-validator \
---bpf-program raFv43GLKy2ySi5oVExZxFGwdbKRRaDQBqikiY9YbVF target/deploy/draffle.so \
+--bpf-program rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R target/deploy/draffle.so \
 --bpf-program 56zQMVdReF9VTm4E2gqXPC7Z44Rqq5YsSUHVeKGhPYVv target/deploy/community_staking.so \
 --bpf-program Af1FcsjwEmJQ9E1nKhsDmFMvvE8wjrLW3FRAXjzCAaMR target/deploy/dispenser.so \
 --bpf-program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s scripts/metaplex_token_metadata.so \
@@ -201,7 +201,7 @@ target/debug/draffle create-raffle \
         --max-entrants 100 \
         --provider.cluster devnet \
         --provider.wallet operations/PerrXcLkieKrGRuodwhYikfnYJi9cTNiRyK5hrufjXy.json \
-        --program-id raFv43GLKy2ySi5oVExZxFGwdbKRRaDQBqikiY9YbVF
+        --program-id rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R
 
 # SOL RAFFE
 target/debug/draffle add-prize \
@@ -211,7 +211,7 @@ target/debug/draffle add-prize \
         0 \
         --provider.cluster mainnet \
         --provider.wallet operations/PerrXcLkieKrGRuodwhYikfnYJi9cTNiRyK5hrufjXy.json \
-        --program-id raFv43GLKy2ySi5oVExZxFGwdbKRRaDQBqikiY9YbVF
+        --program-id rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R
 
 target/debug/draffle show-raffle \
     2yL3G9UuT9sEXJkSa67mnur2cjnteVRpCZRfSeNXvED4 \
@@ -221,19 +221,19 @@ target/debug/draffle reveal-winners \
         2yL3G9UuT9sEXJkSa67mnur2cjnteVRpCZRfSeNXvED4 \
         --provider.cluster devnet \
         --provider.wallet operations/PerrXcLkieKrGRuodwhYikfnYJi9cTNiRyK5hrufjXy.json \
-        --program-id raFv43GLKy2ySi5oVExZxFGwdbKRRaDQBqikiY9YbVF
+        --program-id rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R
 
 target/debug/draffle collect-proceeds \
         5Po1nyZ9UAQzjS2KdV8b6Lwk3y9hwxrL1po2dvfn6dr9 \
         Czt28u7gMKPy2924adLsCiL9Hg65XqS2GDjDTQuCGNMf \
         --provider.cluster devnet \
         --provider.wallet operations/PerrXcLkieKrGRuodwhYikfnYJi9cTNiRyK5hrufjXy.json \
-        --program-id raFv43GLKy2ySi5oVExZxFGwdbKRRaDQBqikiY9YbVF
+        --program-id rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R
 
 target/debug/draffle close-entrants \
     --provider.cluster devnet \
     --provider.wallet operations/PerrXcLkieKrGRuodwhYikfnYJi9cTNiRyK5hrufjXy.json \
-    --program-id raFv43GLKy2ySi5oVExZxFGwdbKRRaDQBqikiY9YbVF \
+    --program-id rafRCJ66DK1kpfUqvF9VsDfjREzGZCyNVBAB8AeoE5R \
     5Po1nyZ9UAQzjS2KdV8b6Lwk3y9hwxrL1po2dvfn6dr9
 
 

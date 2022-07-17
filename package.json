@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@solana/spl-token-registry": "^0.2.4574",
     "react-lottie": "^1.2.3"
   }
 }
